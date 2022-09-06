@@ -1,0 +1,241 @@
+/*MOBILE LAST*/
+
+/*
+#D9D9D9 
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&family=Montserrat:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+body {
+    background-color: #d9d9d9;
+}
+
+
+h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    border: black 4px dashed;
+    margin: 50px;
+    padding: 10px 35px 10px 15px;
+}
+
+h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: black;
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d9d9d9;
+    padding: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+/*  HEADER */
+
+.header a:hover {
+    color: aqua;
+    font-weight: bold;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header li {
+    margin: 5px;
+    padding: 5px;
+    border: black 3px solid;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 250px;
+    padding: 15px;
+}
+
+
+
+/* BARRA DE BUSQUEDA */
+
+.campoDebusqueda {
+    width: 100%;
+    padding: 10px 35px 10px 15px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+
+.container {
+    margin: 30px auto;
+    width: 300px;
+    height: 20px;
+}
+
+.botonDebusqueda {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -25px;
+}
+
+.botonDebusqueda img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+/* MAIN */
+
+.mainNosotros div{
+    display: flex;
+    justify-content: center;
+}
+
+.modelos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main img {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    padding: 15px;   
+}
+
+
+
+.main div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.main p {
+    margin: 50px;
+}
+
+main{ 
+    min-height: 80vh;
+}
+
+
+/* FOOTER */
+
+.footer p {
+    text-align: center;
+}
+
+.footer a {
+    padding: 5px;
+    margin: 20px;
+}
+
+.footer div{
+    display: flex;
+    justify-content: center;
+}
+
+/* PRODUCTOS */
+
+.grid-container {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-row-gap: 10px;
+}
+
+/* FORMULARIO CONTACTO */
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactForm h1{
+   width: 90%;
+}
+
+.contactForm input{
+    border: none;
+    border-radius: 80px;
+    outline: none;
+}
+
+.contactForm textarea{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+.contactForm span{ 
+    text-align: center;
+}
+
+
+/* MEDIA QUERYS */
+
+@media (max-width: 850px){
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+@media(max-width: 680px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .main iframe {
+        width: 250px;
+        height: 250px;
+    }
+
+    .mainNosotros img {
+        width: 300px;
+        height: 300px;
+    }
+
+
+
+}
