@@ -50,14 +50,27 @@ ul {
 /*  HEADER */
 
 .header a:hover {
-    color: aqua;
-    font-weight: bold;
+    background-size: 0 3px, 100% 3px;
 }
 
+
 .header a {
-    color: black;
+    color: inherit;
     text-decoration: none;
+
+    background: linear-gradient(to right,
+           #d9d9d9,
+            #d9d9d9),
+        linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
 }
+  
 
 .header ul {
     display: flex;
@@ -69,8 +82,8 @@ ul {
 .header li {
     margin: 5px;
     padding: 5px;
-    border: black 3px solid;
-    background-color: white;
+    border: none;
+    background-color: #d9d9d9;
 }
 
 .logo {
@@ -87,16 +100,20 @@ ul {
 
 /* BARRA DE BUSQUEDA */
 
+.formulario{
+    display: flex;
+}
+
 .campoDebusqueda {
     width: 100%;
-    padding: 10px 35px 10px 15px;
+    padding: 10px 15px 10px 15px;
     border: none;
     border-radius: 100px;
     outline: none;
 }
 
 .container {
-    margin: 30px auto;
+    margin: 15px auto;
     width: 300px;
     height: 20px;
 }
@@ -119,6 +136,11 @@ ul {
 .mainNosotros div{
     display: flex;
     justify-content: center;
+}
+
+.mainNosotros p {
+    margin: 50px;
+    padding: 10px 15px 10px 15px;
 }
 
 .modelos {
@@ -146,6 +168,7 @@ ul {
 
 .main p {
     margin: 50px;
+    padding: 10px 15px 10px 15px;
 }
 
 main{ 
@@ -157,6 +180,7 @@ main{
 
 .footer p {
     text-align: center;
+    margin: 10px;
 }
 
 .footer a {
@@ -164,7 +188,8 @@ main{
     margin: 20px;
 }
 
-.footer div{
+
+.footer div {
     display: flex;
     justify-content: center;
 }
@@ -234,6 +259,10 @@ main{
     .mainNosotros img {
         width: 300px;
         height: 300px;
+    }
+
+    .container{
+        width: 200px;
     }
 
 
