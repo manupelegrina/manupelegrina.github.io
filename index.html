@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Cibar logo.jpeg">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>CIBAR</title>
 </head>
 
@@ -25,7 +28,7 @@
                 <li><a href="../Pages/Productos.html">PRODUCTOS</a></li>
                 <li><a href="../Pages/Contacto.html">CONTACTO</a></li>
                 <li><a href="../Pages/Donde encontrarnos.html">¿DONDE ENCONTRARNOS?</a></li>
-        
+
             </ul>
         </nav>
         <!-- barra buscadora -->
@@ -38,12 +41,42 @@
             </form>
         </div>
     </header>
-    <main class="main">
-        <div>
+    <main class="mainIndex">
+        <!-- <div>
             <img src="./img/Imagen-inicio1.jpeg" alt="Modelo 1">
             <img src="./img/img-inicio5.jpeg" alt="Modelo 3">
             <img src="./img/Imagen-inicio2.jpeg" alt="Modelo 2">
-        </div>
+        </div> -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.flaunter.com/wp-content/uploads/2017/08/Top-Fashion-Influencers-Vanessa-Hong.jpg"
+                        class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.glamourmagazine.co.uk/photos/61df1fe9e830e47141686bda/16:9/w_2560%2Cc_limit/HO21_MMKxASHYA_1_sRGB300.jpg"
+                        class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="https://fashionmagazine.com/wp-content/uploads/2022/01/New-Project-7-800x500.png" class="d-block w-100"
+                        alt="Slide 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
         <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -55,27 +88,29 @@
     </main>
     <!--  Pie de pagina -->
     <footer class="footer">
-        
+
         <p>Pasión y atención por los detalles &copy</p>
-        
+
         <!-- Enlaces absolutos -->
-        
+
         <div>
             <a href="https://instagram.com/cibarstudio?igshid=YmMyMTA2M2Y=">
                 <img src="https://th.bing.com/th/id/R.3897bb1af18792774458cd32b67c4509?rik=pdcnnmoxANbD6A&pid=ImgRaw&r=0"
                     alt="Instagram" width="50" height="50">
             </a>
-        
-        
+
+
             <a href="https://www.facebook.com/profile.php?id=100063832194304">
-                <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png" alt="Facebook" width="50"
-                    height="50">
+                <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png" alt="Facebook"
+                    width="50" height="50">
             </a>
         </div>
 
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>></script>
 </body>
 
 </html>

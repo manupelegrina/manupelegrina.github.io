@@ -16,7 +16,7 @@
 font-family: 'Montserrat', sans-serif; */
 
 body {
-    background-color: #d9d9d9;
+    background-color: #d9d9d9 !important;
 }
 
 
@@ -24,19 +24,24 @@ h1 {
     font-family: 'Barlow Condensed', sans-serif;
     text-align: center;
     border: black 4px dashed;
-    margin: 50px;
+    margin: 50px 100px 50px 100px;
     padding: 10px 35px 10px 15px;
+    
 }
 
 h3 {
     font-family: 'Barlow Condensed', sans-serif;
     color: black;
     text-align: center;
+    word-spacing: 3px;
     margin: 20px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
+    text-indent: 10px;
+    letter-spacing: 1px;
+    font-size: 20px;
 }
 
 ul {
@@ -84,6 +89,7 @@ ul {
     padding: 5px;
     border: none;
     background-color: #d9d9d9;
+    font-size: 20px;
 }
 
 .logo {
@@ -113,9 +119,9 @@ ul {
 }
 
 .container {
-    margin: 15px auto;
-    width: 300px;
-    height: 20px;
+    margin: 50px auto;
+    width: 1100px;
+    height: 30px;
 }
 
 .botonDebusqueda {
@@ -143,20 +149,31 @@ ul {
     padding: 10px 15px 10px 15px;
 }
 
+.mainNosotros h1 {
+    margin: 50px;
+}
+
+.mainNosotros img {
+    width: 800px;
+    height: 700px;
+}
+
 .modelos {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main img {
+/* .main img {
     width: 200px;
     height: 300px;
     margin: 10px;
     padding: 15px;   
+} */
+
+.mainIndex {
+    margin: 40px;
 }
-
-
 
 .main div{
     display: flex;
@@ -207,48 +224,53 @@ main{
 }
 
 /* FORMULARIO CONTACTO */
-
-.contactForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contactForm {
+    margin: 40px;  
 }
 
-.contactForm h1{
-   width: 90%;
+.contactForm h1 {
+    margin-bottom: 60px;
 }
-
-.contactForm input{
-    border: none;
-    border-radius: 80px;
-    outline: none;
-}
-
-.contactForm textarea{
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-
-
-.contactForm span{ 
-    text-align: center;
-}
-
 
 /* MEDIA QUERYS */
+
+@media (max-width: 1200px){
+    .container{
+        width: 800px;
+    }
+
+}
+
+
+
+
+
 
 @media (max-width: 850px){
     .grid-container{
         grid-template-columns: repeat(1,1fr);
     }
+
+    .mainNosotros img {
+        width: 600px;
+        height: 500px;
+    }
+    .container{
+        width: 500px;
+    }
+
+    
 }
 
 
 @media(max-width: 680px) {
     .header {
         flex-direction: column;
+    }
+
+    .mainIndex img {
+        width: 500px;
+        height: 300px;
     }
 
     .main iframe {
@@ -262,7 +284,7 @@ main{
     }
 
     .container{
-        width: 200px;
+        width: 300px;
     }
 
 

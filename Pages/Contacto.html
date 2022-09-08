@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Cibar logo.jpeg">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>CIBAR</title>
 </head>
 
@@ -40,23 +43,50 @@
     </header>
     <main class="contactForm">
         <h1>CONTACTO</h1>
-        <form action="#" method="get"></form>
-        <label for="Nombre y apellido">Nombre y apellido</label>
-        <br>
-        <input type="text" name="Nombre">
-        <br><br>
-        <label for="edad">Edad</label>
-        <br>
-        <input type="date" name="edad">
-        <br><br>
-        <span>Hombre</span>
-        <input type="radio" name="sexo" value="Hombre">
-        <span>Mujer</span>
-        <input type="radio" name="sexo" value="Mujer">
-        <br><br>
-        <textarea name="Comentario" placeholder="Deja tu comentario aquí" cols="30" rows="10"></textarea>
-        <br><br>
-        <input type="submit">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Nombre y Apellido</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Calle/Número">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Direccion 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento/Piso">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Provincia</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Código Postal</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Quiero suscribirme a las novedades de Cibar
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
     </main>
     <!--  Pie de pagina -->
     <footer class="footer">
@@ -73,10 +103,12 @@
                     width="50" height="50">
             </a>
         </div>
-
+    
     </footer>
-
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>></script>
 </body>
 
 </html>
