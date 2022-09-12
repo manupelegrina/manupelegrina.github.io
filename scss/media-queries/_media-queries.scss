@@ -1,0 +1,58 @@
+@media (max-width: 1200px){
+    .container{
+        width: 800px;
+    }
+
+}
+
+
+@media (max-width: 850px){
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .mainNosotros img {
+        width: 600px;
+        height: 500px;
+    }
+    .container{
+        width: 500px;
+    }
+
+    
+}
+
+
+@media(max-width: 680px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .mainIndex img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .main iframe {
+        width: 250px;
+        height: 250px;
+    }
+
+    .mainNosotros img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container{
+        width: 300px;
+    }
+
+
+
+}
+
+@media(max-width: 575px) {
+    .container{
+        width: 200px;
+    }
+}

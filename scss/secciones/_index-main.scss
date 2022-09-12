@@ -1,0 +1,57 @@
+
+.mainNosotros { 
+
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+
+p {
+    margin: 50px;
+    padding: 10px 15px 10px 15px;
+}
+
+h1 {
+    margin: 50px;
+}
+
+img {
+    width: 800px;
+    height: 700px;
+}
+ }
+
+.modelos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .main img {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    padding: 15px;   
+} */
+
+.mainIndex {
+    margin: 40px;
+}
+
+.main { 
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+p {
+    margin: 50px;
+    padding: 10px 15px 10px 15px;
+}
+}
