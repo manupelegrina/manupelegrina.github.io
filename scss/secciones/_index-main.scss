@@ -70,6 +70,10 @@
 
         }
 
+        li{
+            font-size: 20px;
+        }
+
         iframe {
             width: 600px;
             height: 500px;
@@ -115,9 +119,28 @@
     justify-items: center;
     grid-row-gap: 5px;
 
+    .card{
+        border-radius: 30px;
+        &:hover{
+            transform: scale(1.05);
+            transition: 500ms;
+        }
+
+    }
+    
     .btn{
         background-color: black;
+        color: #d9d9d9;
     }
+
+    .card-body{
+        background-color: #312d2d;
+       
+    }
+    .card-title{
+            color: black;
+        }
+    
 }
 
 .contactForm {
