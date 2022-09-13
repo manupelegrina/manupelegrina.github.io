@@ -78,10 +78,6 @@
 .mainNosotros h1 {
   margin: 50px; }
 
-.mainNosotros img {
-  width: 800px;
-  height: 700px; }
-
 .modelos {
   display: flex;
   flex-direction: column;
@@ -138,6 +134,8 @@
   justify-content: center;
   justify-items: center;
   grid-row-gap: 5px; }
+  .grid-container .btn {
+    background-color: black; }
 
 .contactForm {
   margin: 40px; }

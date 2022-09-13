@@ -15,10 +15,7 @@
         margin: 50px;
     }
 
-    img {
-        width: 800px;
-        height: 700px;
-    }
+   
 }
 
 .modelos {
@@ -117,6 +114,10 @@
     justify-content: center;
     justify-items: center;
     grid-row-gap: 5px;
+
+    .btn{
+        background-color: black;
+    }
 }
 
 .contactForm {
