@@ -2,56 +2,100 @@
 .mainNosotros { 
 
 
-div {
-    display: flex;
-    justify-content: center;
-}
+        div {
+            display: flex;
+            justify-content: center;
+        }
 
 
-p {
-    margin: 50px;
-    padding: 10px 15px 10px 15px;
-}
+        p {
+            margin: 50px;
+            padding: 10px 15px 10px 15px;
+        }
 
-h1 {
-    margin: 50px;
-}
+        h1 {
+            margin: 50px;
+        }
 
-img {
-    width: 800px;
-    height: 700px;
-}
+        img {
+            width: 800px;
+            height: 700px;
+        }
  }
 
 .modelos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
-/* .main img {
-    width: 200px;
-    height: 300px;
-    margin: 10px;
-    padding: 15px;   
-} */
+
 
 .mainIndex {
     margin: 40px;
 }
 
-.main { 
+.mainIframe { 
 
-div {
-    display: flex;
-    flex-direction: row;
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            flex-wrap: wrap;
+        }
+
+
+        p {
+            margin: 50px;
+            padding: 10px 15px 10px 15px;
+        }
+
+        // iframe{
+        //     display:flex;
+        //    justify-content: end;
+        //     margin-right: 50px;
+        // }
+}
+
+.footer { 
+
+        p {
+            text-align: center;
+            margin: 10px;
+        }
+
+        a {
+            padding: 5px;
+            margin: 20px;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 300ms;
+
+            }
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+        }
+}
+
+.grid-container {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    
     justify-content: center;
-    flex-wrap: wrap;
+    justify-items: center;
+    grid-row-gap: 5px;
 }
 
+.contactForm {
+    
+    margin: 40px;  
 
-p {
-    margin: 50px;
-    padding: 10px 15px 10px 15px;
-}
+        h1 {
+            margin-bottom: 60px;
+} 
 }

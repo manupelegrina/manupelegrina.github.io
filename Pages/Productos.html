@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Cibar logo.jpeg">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>CIBAR</title>
 </head>
 
@@ -13,7 +16,7 @@
     <!-- Encabezado -->
     <header class="header">
         <!-- logo -->
-        <a href="../index.html" class="logo">
+        <a href="../index.html" class="header__logo">
             <img src="../img/Cibar logo.jpeg" alt="Logo Cibar">
         </a>
         <!-- Barra de navegacion -->
@@ -25,9 +28,9 @@
                 <li><a href="../Pages/Productos.html" class="barraNav">PRODUCTOS</a></li>
                 <li><a href="../Pages/Contacto.html" class="barraNav">CONTACTO</a></li>
                 <li><a href="../Pages/Donde encontrarnos.html" class="barraNav">¿DONDE ENCONTRARNOS?</a></li>
-        
+
             </ul>
-        
+
             <br>
             <!-- barra buscadora -->
             <div class="container">
@@ -47,26 +50,58 @@
         <h3>Dentro de nuestro catalogo se pueden encontrar nuestros productos en una amplia variedad de colores</h3>
         <br>
         <div class="grid-container">
-            <div>
-                <p>Modelo 1</p>
-                <img src="../img/Imagen-2.jpeg" alt="Buzo indigo" width="300" height="400">
+        
+            <div class="card" style="width: 18rem;">
+                <img src="../img/Imagen-2.jpeg" class="card-img-top" alt="Indigo">
+                <div class="card-body">
+                    <h5 class="card-title">Buzo Classic Indigo</h5>
+                    <p class="card-text">ARS 9500</p>
+                    <a href="#" class="btn btn-primary btn-color black">COMPRAR</a>
+                </div>
             </div>
-            
-            <div>
-                <p>Modelo 2</p>
-                <img src="../img/Imagen-3.jpeg" alt="Buzo Naranja" width="300" height="400">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/Imagen-3.jpeg" class="card-img-top" alt="Naranja">
+                <div class="card-body">
+                    <h5 class="card-title">Buzo Classic OR</h5>
+                    <p class="card-text">ARS 9500</p>
+                    <a href="#" class="btn btn-primary">COMPRAR</a>
+                </div>
             </div>
-           
-            <div>
-                <p>Modelo 3</p>
-                <img src="../img/Imagen-4.jpeg" alt="Buzo celeste" width="300" height="400">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/Imagen-4.jpeg" class="card-img-top" alt="Cielo">
+                <div class="card-body">
+                    <h5 class="card-title">Buzo Classic Cielo</h5>
+                    <p class="card-text">ARS9500</p>
+                    <a href="#" class="btn btn-primary">COMPRAR</a>
+                </div>
             </div>
-           
-            <div>
-                <p>Modelo 4</p>
-                <img src="../img/Imagen-5.jpeg" alt="Buzo Rojo" width="300" height="400">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/Imagen-5.jpeg" class="card-img-top" alt="Rojo">
+                <div class="card-body">
+                    <h5 class="card-title">Buzo Classic rojo</h5>
+                    <p class="card-text">ARS 9500</p>
+                    <a href="#" class="btn btn-primary">COMPRAR</a>
+                </div>
+            </div>
+        
+            <div class="card" style="width: 18rem;">
+                <img src="../img/Classic Aluminio.jpg" class="card-img-top" alt="Indigo">
+                <div class="card-body">
+                    <h5 class="card-title">Buzo Classic Aluminio</h5>
+                    <p class="card-text">ARS 9500</p>
+                    <a href="#" class="btn btn-primary">COMPRAR</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/Buzo Longneck.jpg" class="card-img-top" alt="Indigo">
+                <div class="card-body">
+                    <h5 class="card-title">Buzo Classic Longneck</h5>
+                    <p class="card-text">ARS 10500</p>
+                    <a href="#" class="btn btn-primary">COMPRAR</a>
+                </div>
             </div>
         </div>
+
     </main>
     <!--  Pie de pagina -->
     <footer class="footer">
@@ -82,10 +117,16 @@
                 <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png" alt="Facebook"
                     width="50" height="50">
             </a>
+            <a href="https://api.whatsapp.com/send?phone=123456789">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png" alt="Whatsapp"
+                width="50" height="50">
+            </a>
         </div>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>></script>
 
 </body>
 
