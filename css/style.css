@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&family=Montserrat:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@100;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -67,16 +67,17 @@
   height: 20px;
   object-fit: cover; }
 
-.mainNosotros div {
-  display: flex;
-  justify-content: center; }
-
-.mainNosotros p {
-  margin: 50px;
-  padding: 10px 15px 10px 15px; }
-
-.mainNosotros h1 {
-  margin: 50px; }
+.mainNosotros {
+  max-width: 1200px;
+  margin: auto; }
+  .mainNosotros div {
+    display: flex;
+    justify-content: center; }
+  .mainNosotros p {
+    margin: 50px;
+    padding: 10px 15px 10px 15px; }
+  .mainNosotros h1 {
+    margin: 50px; }
 
 .modelos {
   display: flex;
@@ -84,7 +85,8 @@
   align-items: center; }
 
 .mainIndex {
-  margin: 40px; }
+  margin: auto;
+  max-width: 1200px; }
 
 .mainIframe h1 {
   text-align: center; }
@@ -92,6 +94,8 @@
 .mainIframe .grid3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  max-width: 1200px;
+  margin: auto;
   justify-content: center;
   justify-items: center;
   grid-row-gap: 5px; }
@@ -107,7 +111,8 @@
     margin: 15px;
     float: left; }
   .mainIframe .grid3 li {
-    font-size: 20px; }
+    font-family: "Dancing Script", cursive;
+    font-size: 26px; }
   .mainIframe .grid3 iframe {
     width: 600px;
     height: 500px; }
@@ -133,9 +138,10 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  justify-content: center;
   justify-items: center;
-  grid-row-gap: 5px; }
+  align-items: end;
+  width: 1500px;
+  margin: auto; }
   .grid-container .card {
     border-radius: 30px; }
     .grid-container .card:hover {
@@ -151,6 +157,8 @@
     background-color: #312d2d; }
   .grid-container .card-title {
     color: black; }
+  .grid-container .card-img-top {
+    height: 400px; }
 
 .contactForm {
   margin: 40px; }
@@ -165,35 +173,35 @@
 
 body {
   background-color: #d9d9d9 !important; }
-  body h1 {
-    font-family: 'Barlow Condensed', sans-serif !important; }
 
 main {
   min-height: 80vh; }
 
 h1 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center; }
 
 h3 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: black;
   text-align: center;
-  word-spacing: 3px;
+  word-spacing: 0.5px;
   margin: 20px; }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Dancing Script", cursive;
   text-indent: 10px;
   letter-spacing: 1px;
-  font-size: 20px; }
+  font-size: 26px; }
 
 ul {
-  font-family: 'Montserrat', sans-serif;
   background-color: #d9d9d9;
   padding: 20px;
   list-style-type: none;
   text-align: center; }
+
+li {
+  font-family: "Josefin Sans", sans-serif; }
 
 @media (max-width: 1200px) {
   .container {
@@ -206,13 +214,14 @@ ul {
   .grid-container {
     grid-template-columns: repeat(1, 1fr); }
   .mainNosotros img {
-    width: 600px;
-    height: 500px; }
+    width: 800px;
+    height: 500px;
+    overflow: hidden; }
   .container {
     width: 500px; }
   .mainIframe .grid3 iframe {
     width: 400px;
-    height: 300px; } }
+    height: 500px; } }
 
 @media (max-width: 680px) {
   .header {
@@ -227,11 +236,11 @@ ul {
     width: 300px; }
   .mainIframe .grid3 iframe {
     width: 300px;
-    height: 200px; } }
+    height: 500px; } }
 
 @media (max-width: 575px) {
   .container {
     width: 200px; }
   .mainIframe .grid3 iframe {
     width: 200px;
-    height: 100px; } }
+    height: 500px; } }

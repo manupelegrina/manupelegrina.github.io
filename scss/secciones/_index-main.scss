@@ -1,5 +1,9 @@
 .mainNosotros {
 
+    max-width: 1200px;
+    margin: auto;
+    
+
     div {
         display: flex;
         justify-content: center;
@@ -9,6 +13,7 @@
     p {
         margin: 50px;
         padding: 10px 15px 10px 15px;
+        
     }
 
     h1 {
@@ -27,7 +32,9 @@
 
 
 .mainIndex {
-    margin: 40px;
+    margin: auto;
+    max-width: 1200px;
+
 }
 
 .mainIframe {
@@ -41,7 +48,8 @@
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
+        max-width: 1200px;
+        margin: auto;
         justify-content: center;
         justify-items: center;
         grid-row-gap: 5px;
@@ -71,7 +79,9 @@
         }
 
         li{
-            font-size: 20px;
+            font-family: $tipografiaP;
+            font-size: 26px;
+            
         }
 
         iframe {
@@ -115,12 +125,14 @@
 
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    justify-content: center;
     justify-items: center;
-    grid-row-gap: 5px;
-
+    align-items: end;
+    width: 1500px;
+    margin: auto;
+    
     .card{
         border-radius: 30px;
+
         &:hover{
             transform: scale(1.05);
             transition: 500ms;
@@ -144,6 +156,10 @@
     .card-title{
             color: black;
         }
+
+    .card-img-top{
+       height: 400px;
+    }   
     
 }
 
