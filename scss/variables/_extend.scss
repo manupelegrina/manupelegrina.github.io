@@ -1,0 +1,15 @@
+%estiloParrafo {
+    text-align: center;
+    font-family: $tipografiaP;
+    font-size: 26px;
+}
+
+%estiloCardtext {
+    font-family: &tipografiaG;
+    font-size: 22px;
+}
+
+%estiloTarjeta {
+    text-align: center;
+    font-family: $tipografiaP;
+}

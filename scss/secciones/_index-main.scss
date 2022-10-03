@@ -17,7 +17,7 @@
 
     p {
         margin: 15px;
-        text-align: center;
+        @extend %estiloParrafo;
         
 
     }
@@ -43,6 +43,7 @@
         
 
         p{
+            @extend %estiloParrafo;
             margin: 15px;
         }
        
@@ -111,7 +112,7 @@
 .footer {
 
     p {
-        text-align: center;
+        @extend %estiloParrafo;
         margin: 10px;
     }
 
@@ -141,6 +142,10 @@
     width: 1000px;
     margin: auto;
 
+    p{
+        @extend %estiloTarjeta;
+    }
+
     .card {
         border-radius: 30px;
 
@@ -152,8 +157,8 @@
     }
 
     .card-text {
-        color: rgb(0, 0, 0);
-        font-family: &tipografiaG;
+     
+      @include delineadoFuente($colorPrincipal, $gradient);
     }
 
     .btn {
