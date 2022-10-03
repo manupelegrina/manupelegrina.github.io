@@ -1,0 +1,20 @@
+Coloqué estas meta keywords en cada html:
+
+Index:ropa, buzos, showroom, urbano, moda circular;
+Nosotros:Cibar, origen, nosotros;
+Contacto:Contacto, email cibar, informacion de contacto;
+Productos:buzos, comprar cibar, productos;
+Donde encontrarnos:mapas, ubicacion, lugar de atencion, donde esta cibar;
+
+Se cambiaron estos titulos
+
+Cibar | Home
+
+Cibar | Nosotros
+
+Cibar | Contacto
+
+Cibar | Encontranos
+
+Cibar | Productos
+

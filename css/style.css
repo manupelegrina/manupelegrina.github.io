@@ -42,6 +42,9 @@
     .header__logo img:hover {
       transform: scale(1.1); }
 
+.header nav .breadcrumb {
+  margin-left: 20px; }
+
 .header nav .formulario {
   display: flex; }
 
@@ -154,7 +157,8 @@
       transform: scale(1.05);
       transition: 500ms; }
   .grid-container .card-text {
-    color: white; }
+    color: black;
+    font-family: .grid-container .card-text tipografiaG; }
   .grid-container .btn {
     background-color: black;
     color: #d9d9d9;
