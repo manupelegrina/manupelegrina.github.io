@@ -2,7 +2,12 @@
 
     max-width: 1200px;
     margin: auto;
-    
+
+    img{
+        width: 1200px;
+        height: 500px;
+    }
+
 
     div {
         display: flex;
@@ -11,16 +16,17 @@
 
 
     p {
-        margin: 50px;
-        padding: 10px 15px 10px 15px;
+        margin: 15px;
+        text-align: center;
         
+
     }
 
     h1 {
         margin: 50px;
     }
 
-   
+
 }
 
 .modelos {
@@ -32,9 +38,14 @@
 
 
 .mainIndex {
-    margin: auto;
-    max-width: 1200px;
+        max-width: 1200px;
+        margin: auto;
+        
 
+        p{
+            margin: 15px;
+        }
+       
 }
 
 .mainIframe {
@@ -54,7 +65,7 @@
         justify-items: center;
         grid-row-gap: 5px;
 
-        .row{
+        .row {
             display: flex;
             flex-direction: column;
         }
@@ -78,10 +89,10 @@
 
         }
 
-        li{
+        li {
             font-family: $tipografiaP;
             font-size: 26px;
-            
+
         }
 
         iframe {
@@ -127,45 +138,48 @@
     grid-template-columns: repeat(3, 2fr);
     justify-items: center;
     align-items: end;
-    width: 1500px;
+    width: 1000px;
     margin: auto;
-    
-    .card{
+
+    .card {
         border-radius: 30px;
 
-        &:hover{
+        &:hover {
             transform: scale(1.05);
             transition: 500ms;
         }
 
     }
-    
-    .card-text{
+
+    .card-text {
         color: white;
     }
-    .btn{
+
+    .btn {
         background-color: black;
         color: #d9d9d9;
         border-color: black;
     }
 
-    .card-body{
-        background-color: #312d2d;
-       
-    }
-    .card-title{
-            color: black;
-        }
+    .card-body {
+        background-color: #b4b4b4;
 
-    .card-img-top{
-       height: 400px;
-    }   
-    
+    }
+
+    .card-title {
+        color: black;
+    }
+
+    .card-img-top {
+        height: 400px;
+    }
+
 }
 
 .contactForm {
 
-    margin: 40px;
+    max-width: 1000px;
+    margin: auto;
 
 
     h1 {
@@ -177,7 +191,7 @@
     }
 
     input {
-        
+
         &:focus {
             border-radius: 10px;
             background-color: #6ca7ff;
@@ -185,4 +199,3 @@
         }
     }
 }
-
